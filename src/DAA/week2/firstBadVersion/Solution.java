@@ -1,0 +1,17 @@
+package DAA.week2.firstBadVersion;
+
+public class Solution extends VersionControl {
+
+    public int firstBadVersion(int n) {
+
+        for (int i = 1; i <= n; i++) {
+
+            if (isBadVersion(i)) {
+                return i;
+            }
+
+        }
+
+        return -1;
+    }
+}
